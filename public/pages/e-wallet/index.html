@@ -1,0 +1,99 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Up E-Wallet</title>
+
+    <link rel="stylesheet" href="../../../src/tailwind/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <header class="w-full p-5 border-b flex items-center gap-3">
+        <a href="/index.html">
+            <ion-icon name="arrow-back-outline" class="text-xl"></ion-icon>
+        </a>
+        <h1 class="capitalize text-lg font-quicksand font-medium">top up e-wallet</h1>
+    </header>
+
+    <main class="w-full h-auto p-5">
+
+        <div class="my-5">
+            <h2 class="capitalize text-lg font-medium mb-5">platform</h2>
+
+            <select name="platform" id="platform"
+                class="w-full p-3 bg-transparent border border-gray-400 rounded capitalize">
+                <option selected disabled></option>
+                <option value="gopay">gopay</option>
+                <option value="dana">dana</option>
+                <option value="ovo">ovo</option>
+                <option value="shopeepay">shopee pay</option>
+            </select>
+        </div>
+
+        <div class="my-5">
+            <h2 class="capitalize text-lg font-medium mb-5">nomor e-wallet</h2>
+
+            <div>
+                <input type="number" name="no-wallet" id="no-wallet"
+                    class="w-full border border-gray-400 p-3 rounded text-lg" placeholder="08xxxxx">
+            </div>
+        </div>
+
+        <div class="my-5">
+            <h2 class="capitalize text-lg font-medium mb-5">nominal top up</h2>
+
+            <div class="w-full h-max relative">
+                <input type="number" name="nominal" id="nominal"
+                    class="w-full border border-gray-400 p-3 pl-10 rounded text-lg" placeholder="10.000">
+                <h3 class="absolute left-2 top-1/4 text-lg font-quicksand text-gray-400">Rp</h3>
+            </div>
+            <div class="w-full h-auto grid grid-cols-3 gap-2 mt-5">
+                <div class="w-full text-center p-3 border rounded overflow-hidden active:bg-gray-200">
+                    <h2 class="w-full truncate">100.000</h2>
+                </div>
+                <div class="w-full text-center p-3 border rounded overflow-hidden active:bg-gray-200">
+                    <h2 class="w-full truncate">200.000</h2>
+                </div>
+                <div class="w-full text-center p-3 border rounded overflow-hidden active:bg-gray-200">
+                    <h2 class="w-full truncate">500.000</h2>
+                </div>
+                <div class="w-full text-center p-3 border rounded overflow-hidden active:bg-gray-200">
+                    <h2 class="w-full truncate">1.000.000</h2>
+                </div>
+                <div class="w-full text-center p-3 border rounded overflow-hidden active:bg-gray-200">
+                    <h2 class="w-full truncate">1.500.000</h2>
+                </div>
+                <div class="w-full text-center p-3 border rounded overflow-hidden active:bg-gray-200">
+                    <h2 class="w-full truncate">2.000.000</h2>
+                </div>
+                <div class="w-full text-center p-3 border rounded overflow-hidden active:bg-gray-200">
+                    <h2 class="w-full truncate">2.500.000</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- METODE PEMBAYARAN -->
+        <div class="my-5">
+            <h2 class="capitalize text-lg font-medium mb-5">metode pembayaran</h2>
+
+            <select name="platform" id="platform"
+                class="w-full p-3 bg-transparent border border-gray-400 rounded capitalize">
+                <option selected disabled></option>
+                <option value="indomart">indomart</option>
+                <option value="alfamart">alfamart</option>
+                <option value="link-aja">linkAja</option>
+                <option value="transfer-bank">transfer bank</option>
+            </select>
+        </div>
+
+        <div class="mt-10">
+            <button class="w-full h-auto p-3 text-white bg-sky-600 capitalize font-medium rounded">top up</button>
+        </div>
+    </main>
+</body>
+
+</html>

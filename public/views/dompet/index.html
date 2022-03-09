@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dompet Saya</title>
+    <link rel="stylesheet" href="../../../src/tailwind/style.css">
+    <script src="../../../app.js" type="module"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="container mx-auto p-5 h-auto">
+
+    <main>
+        <div class="w-full h-auto bg-sky-600 rounded-md relative overflow-hidden">
+            <div class="w-full h-10 flex items-center justify-end pr-3 bg-sky-800 my-5 z-20">
+                <button
+                    class="flex items-center gap-1 px-5 bg-sky-600 h-full border-l border-l-sky-300 border-r border-r-sky-300">
+                    <ion-icon name="add-circle-outline" class="text-white"></ion-icon>
+                    <span class="text-white">Top up</span>
+                </button>
+            </div>
+            <div class="p-5">
+                <h1 class="text-2xl font-medium text-white capitalize font-quicksand">
+                    saldo Saya
+                </h1>
+
+                <h1 class="flex items-center gap-2 text-white">
+                    <span class="capitalize text-lg">rp 1.250.000</span>
+                    <button>
+                        <ion-icon name="eye-off-outline" class="w-[20px] h-[20px]"></ion-icon>
+                    </button>
+                </h1>
+            </div>
+            <div
+                class="absolute -bottom-1/4 -right-10 z-10 w-[120px] h-[120px] border-[20px] border-sky-800/50 rounded-full">
+            </div>
+        </div>
+
+        <div class="w-full h-auto grid grid-cols-2 gap-3 my-5">
+            <div>
+                <h1 class="text-base font-medium capitalize mb-3">uang masuk</h1>
+
+                <div class="w-full grid grid-cols-1 gap-2">
+                    <div class="w-full bg-sky-600 flex items-center gap-2 p-3 text-white rounded-md">
+                        <div class="bg-sky-800 p-1 rounded-full">
+                            <ion-icon name="add-outline" class="text-xl"></ion-icon>
+                        </div>
+                        <h3 class="capitalize text-base truncate">rp 1.300.000</h3>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1 class="text-base font-medium capitalize mb-3">uang keluar</h1>
+
+                <div class="w-full grid grid-cols-1 gap-2">
+                    <div class="w-full bg-red-600 flex items-center gap-2 p-3 text-white rounded-md">
+                        <div class="bg-red-800 p-1 rounded-full">
+                            <ion-icon name="remove-outline" class="text-xl"></ion-icon>
+                        </div>
+                        <h3 class="capitalize text-base truncate">rp 50.000</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <mobile-detect></mobile-detect>
+
+    <footer-app></footer-app>
+
+</body>
+
+</html>

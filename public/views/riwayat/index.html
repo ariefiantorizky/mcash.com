@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat Transaksi</title>
+
+    <link rel="stylesheet" href="../../../src/tailwind/style.css">
+    <script src="../../../app.js" type="module"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="container mx-auto p-5 h-auto">
+
+    <header class="mb-8">
+        <h1 class="text-xl font-medium font-quicksand capitalize">riwayat transaksi</h1>
+    </header>
+
+    <main>
+        <div class="w-full h-auto grid grid-cols-1 gap-3">
+            <div class="w-full flex items-center justify-start gap-3 border rounded p-3 overflow-hidden">
+                <div>
+                    <ion-icon name="paper-plane-outline" class="w-[27px] h-[27px] text-red-500"></ion-icon>
+                </div>
+                <div class="grow">
+                    <h1 class="text-base font-medium uppercase truncate">transfer ke bank bri</h1>
+                    <h3 class="text-gray-400 text-sm capitalize">07 maret 2022 - 10.30</h3>
+                </div>
+                <div class="overflow-hidden">
+                    <h1 class="capitalize font-medium text-sm truncate">rp 250.000</h1>
+                </div>
+            </div>
+            <div class="w-full flex items-center justify-start gap-3 border rounded p-3 overflow-hidden">
+                <div>
+                    <ion-icon name="wallet-outline" class="w-[27px] h-[27px] text-green-600"></ion-icon>
+                </div>
+                <div class="grow overflow-hidden">
+                    <h1 class="text-base font-medium uppercase truncate">top-up gopay</h1>
+                    <h3 class="text-gray-400 text-sm capitalize">07 maret 2022 - 10.30</h3>
+                </div>
+                <div class="overflow-hidden">
+                    <h1 class="capitalize font-medium text-sm truncate">rp 50.000</h1>
+                </div>
+            </div>
+            <div class="w-full flex items-center justify-start gap-3 border rounded p-3 overflow-hidden">
+                <div>
+                    <ion-icon name="add-circle-outline" class="w-[27px] h-[27px] text-sky-600"></ion-icon>
+                </div>
+                <div class="grow overflow-hidden">
+                    <h1 class="text-base font-medium uppercase truncate">top-up saldo</h1>
+                    <h3 class="text-gray-400 text-sm capitalize">07 maret 2022 - 10.30</h3>
+                </div>
+                <div class="overflow-hidden">
+                    <h1 class="capitalize font-medium text-sm truncate">rp 350.000</h1>
+                </div>
+            </div>
+            <div class="w-full flex items-center justify-start gap-3 border rounded p-3 overflow-hidden">
+                <div>
+                    <ion-icon name="cart-outline" class="w-[27px] h-[27px] text-violet-600"></ion-icon>
+                </div>
+                <div class="grow overflow-hidden">
+                    <h1 class="text-base font-medium uppercase truncate">pembayaran tokopedia</h1>
+                    <h3 class="text-gray-400 text-sm capitalize truncate">07 maret 2022 - 10.30</h3>
+                </div>
+                <div class="overflow-hidden">
+                    <h1 class="w-full capitalize font-medium text-sm truncate">rp 25.000</h1>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <mobile-detect></mobile-detect>
+
+    <footer-app></footer-app>
+
+</body>
+
+</html>

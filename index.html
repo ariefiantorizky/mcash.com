@@ -1,0 +1,184 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./src/tailwind/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="./app.js" type="module"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header class="w-full h-[220px] p-4 bg-sky-600 relative z-50">
+        <div class="w-full flex items-center justify-between">
+            <div>
+                <div class="w-10 h-10 rounded-full overflow-hidden">
+                    <img src="./src/images/user.jpg" alt="user" class="w-full h-full">
+                </div>
+            </div>
+            <div class="flex items-center gap-5">
+                <a href="#" class="relative">
+                    <i data-feather="bell" class="text-xl text-white"></i>
+                    <!-- badges -->
+                    <div class="w-[7px] h-[7px] bg-red-500 rounded-full absolute -top-2 right-0"></div>
+                </a>
+                <a href="#">
+                    <i data-feather="message-square" class="text-xl text-white"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="w-full h-max relative my-5 mt-10">
+            <div>
+                <input type="search" name="search" id="search"
+                    class="w-full p-2 text-white bg-transparent border-2 border-white focus:outline-none rounded-md placeholder:text-white/80 capitalize"
+                    placeholder="gratis biaya admin...">
+                <button class="absolute right-2 top-1/4 animate-pulse"><i data-feather="search"
+                        class="text-white"></i></button>
+            </div>
+        </div>
+
+        <div
+            class="bg-white w-11/12 h-auto p-5 absolute origin-center left-1/2 -translate-x-1/2 -bottom-10 border shadow-md rounded-md">
+            <div class="w-full grid grid-cols-4 gap-3 justify-center items-center">
+                <div>
+                    <a href="./public/pages/beli-pulsa/index.html"
+                        class="text-center w-full flex flex-col items-center justify-center gap-2">
+                        <ion-icon name="phone-portrait-outline" class="mx-auto w-[30px] h-[30px]">
+                        </ion-icon>
+                        <span class="text-xs capitalize">pulsa</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="./public/pages/e-wallet/index.html"
+                        class="text-center w-full flex flex-col items-center justify-center gap-2">
+                        <ion-icon name="wallet-outline" class="mx-auto w-[30px] h-[30px]"></ion-icon>
+                        <span class="text-xs capitalize">e-wallet</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="./public/pages/transfer-bank/index.html"
+                        class="text-center w-full flex flex-col items-center justify-center gap-2">
+                        <ion-icon name="paper-plane-outline" class="mx-auto w-[30px] h-[30px]"></ion-icon>
+                        <span class="text-xs capitalize">transfer</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="./public/pages/top-up-card/index.html"
+                        class="text-center w-full flex flex-col items-center justify-center gap-2">
+                        <ion-icon name="add-circle-outline" class="mx-auto w-[30px] h-[30px]"></ion-icon>
+                        <span class="text-xs capitalize">top-up</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container p-5 mx-auto my-10 mb-14">
+        <div class="w-full h-auto grid grid-cols-4 gap-4">
+            <div>
+                <a href="#" class="w-full flex flex-col items-center gap-2">
+                    <ion-icon class="w-[30px] h-[30px] text-sky-600 font-bold" name="grid-outline"></ion-icon>
+                    <span class="text-sm font-quicksand capitalize text-gray-500">semua</span>
+                </a>
+            </div>
+            <div>
+                <a href="#" class="w-full flex flex-col items-center gap-2">
+                    <ion-icon class="w-[30px] h-[30px] text-gray-600" name="receipt-outline"></ion-icon>
+                    <span class="text-sm font-quicksand capitalize text-gray-500">tagihan</span>
+                </a>
+            </div>
+            <div>
+                <a href="#" class="w-full flex flex-col items-center gap-2">
+                    <ion-icon class="w-[30px] h-[30px] text-gray-600" name="ticket-outline"></ion-icon>
+                    <span class="text-sm font-quicksand capitalize text-gray-500">voucher</span>
+                </a>
+            </div>
+            <div>
+                <a href="#" class="w-full flex flex-col items-center gap-2">
+                    <ion-icon class="w-[30px] h-[30px] text-gray-600" name="card-outline"></ion-icon>
+                    <span class="text-sm font-quicksand capitalize text-gray-500">pembayaran</span>
+                </a>
+            </div>
+            <div>
+                <a href="./public/pages/listrik-pln/index.html" class="w-full flex flex-col items-center gap-2">
+                    <ion-icon class="w-[30px] h-[30px] text-gray-600" name="flash-outline"></ion-icon>
+                    <span class="text-sm font-quicksand capitalize text-gray-500">listrik</span>
+                </a>
+            </div>
+            <div>
+                <a href="#" class="w-full flex flex-col items-center gap-2">
+                    <ion-icon class="w-[30px] h-[30px] text-gray-600" name="bus-outline"></ion-icon>
+                    <span class="text-sm font-quicksand capitalize text-gray-500">tiket</span>
+                </a>
+            </div>
+            <div>
+                <a href="#" class="w-full flex flex-col items-center gap-2">
+                    <ion-icon class="w-[30px] h-[30px] text-gray-600" name="game-controller-outline"></ion-icon>
+                    <span class="text-sm font-quicksand capitalize text-gray-500">game</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="w-full h-[110px] my-8">
+            <div class="swiper banner-promo w-full z-10">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="w-full h-full bg-gray-300 rounded-md border overflow-hidden">
+                            <img src="./src/images/promo.png" alt="banner-promo" class="w-full h-full">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="w-full h-full bg-gray-300 rounded-md border overflow-hidden">
+                            <img src="./src/images/promo.png" alt="banner-promo" class="w-full h-full">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="w-full h-full bg-gray-300 rounded-md border overflow-hidden">
+                            <img src="./src/images/promo.png" alt="banner-promo" class="w-full h-full">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="w-full h-full bg-gray-300 rounded-md border overflow-hidden">
+                            <img src="./src/images/promo.png" alt="banner-promo" class="w-full h-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full h-auto my-5">
+            <div>
+                <h3 class="capitalize text-base mb-3">butuh bantuan?</h3>
+                <div class="w-full h-max relative rounded-md overflow-hidden">
+                    <input type="text" name="help" id="cs" placeholder="ada yang bisa kami bantu?"
+                        class="w-full p-2 px-3 border border-gray-400 rounded-md">
+                    <button class="bg-sky-600 absolute right-0 top-0 h-full p-3">
+                        <!-- <ion-icon name="chatbubbles-outline"></ion-icon> -->
+                        <ion-icon name="chatbubbles-outline" class="w-[20px] h-[20px] text-white"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <mobile-detect></mobile-detect>
+
+    <footer-app></footer-app>
+
+    <script>
+        // swiper
+        const swiper = new Swiper(".banner-promo", {
+            loop: true,
+            autoplay: true,
+            spaceBetween: 10,
+        });
+    </script>
+</body>
+
+</html>

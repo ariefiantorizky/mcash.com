@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Up E-Wallet</title>
+
+    <link rel="stylesheet" href="../../../src/tailwind/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <header class="w-full p-5 border-b flex items-center gap-3">
+        <a href="/index.html">
+            <ion-icon name="arrow-back-outline" class="text-xl"></ion-icon>
+        </a>
+        <h1 class="capitalize text-lg font-quicksand font-medium">listrik PLN</h1>
+    </header>
+
+    <main class="w-full h-auto p-5">
+
+        <div class="my-5">
+            <h2 class="capitalize text-lg font-medium mb-5">jenis produk listrik</h2>
+
+            <select name="jenis-produk" id="jenis-produk"
+                class="w-full p-3 bg-transparent border border-gray-400 rounded capitalize">
+                <option selected disabled class="hidden"></option>
+                <option value="token-listrik">token listrik</option>
+                <option value="tagihan-listrik">tagihan listrik</option>
+                <option value="pln-non-taglis">PLN non-taglis</option>
+            </select>
+        </div>
+
+        <div class="my-5">
+            <h2 class="capitalize text-lg font-medium mb-5">nomor meter/ID pel</h2>
+
+            <div>
+                <input type="number" name="no-meter" id="no-meter"
+                    class="w-full border border-gray-400 p-3 rounded text-lg">
+            </div>
+        </div>
+
+        <div class="my-5">
+            <h2 class="capitalize text-lg font-medium mb-5">nominal</h2>
+
+            <div class="w-full h-max relative">
+                <select name="nominal" id="nominal"
+                    class="w-full p-3 bg-transparent border border-gray-400 rounded capitalize">
+                    <option selected disabled class="hidden"></option>
+                    <option value="20000">Rp 20.000</option>
+                    <option value="50000">Rp 50.000</option>
+                    <option value="100000">Rp 100.000</option>
+                    <option value="150000">Rp 150.000</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- METODE PEMBAYARAN -->
+        <div class="my-5">
+            <h2 class="capitalize text-lg font-medium mb-5">metode pembayaran</h2>
+
+            <select name="platform" id="platform"
+                class="w-full p-3 bg-transparent border border-gray-400 rounded capitalize">
+                <option selected disabled></option>
+                <option value="saldo">m-card</option>
+                <option value="gopay">gopay</option>
+                <option value="dana">dana</option>
+                <option value="link-aja">linkAja</option>
+                <option value="transfer-bank">transfer bank</option>
+            </select>
+        </div>
+
+        <!-- TOTAL -->
+        <div class="my-5">
+            <h2 class="capitalize text-lg font-medium mb-5">total</h2>
+            <div class="w-full">
+                <table class="w-full">
+                    <tr>
+                        <td class="capitalize text-base text-gray-500">pulsa listrik</td>
+                        <td class="text-right capitalize text-gray-500">rp 20.000</td>
+                    </tr>
+                    <tr>
+                        <td class="capitalize text-base text-gray-500">biaya admin</td>
+                        <td class="capitalize text-base text-right text-gray-500">rp 2.500</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="mt-10">
+            <button class="w-full h-auto p-3 text-white bg-sky-600 capitalize font-medium rounded">
+                token listrik
+
+                <!-- MASUKKAN NOMINAL -->
+                rp 22.500
+            </button>
+        </div>
+    </main>
+</body>
+
+</html>

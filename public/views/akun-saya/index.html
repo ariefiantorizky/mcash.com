@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Akun</title>
+    <link rel="stylesheet" href="../../../src/tailwind/style.css">
+    <script src="../../../app.js" type="module"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="container mx-auto h-auto">
+
+    <header class="w-full h-[350px] bg-sky-500 p-5 relative">
+        <div class="w-full h-full flex flex-col items-center justify-center relative bottom-10">
+            <div class="w-28 h-28 rounded-full overflow-hidden">
+                <img src="../../../src/images/user.jpg" alt="user-profile" class="w-full h-full">
+            </div>
+            <div class="text-center mt-3">
+                <h1 class="uppercase text-2xl text-white font-medium font-quicksand">ariefianto rizky</h1>
+                <p class="italic text-sky-200 capitalize text-base font-medium">premium account</p>
+            </div>
+        </div>
+
+        <div
+            class="bg-white w-11/12 h-auto p-5 absolute origin-center left-1/2 -translate-x-1/2 -bottom-[60px] border shadow-md rounded-md">
+            <div class="w-full flex gap-3 justify-center items-center">
+                <div class="w-auto h-full p-2 pr-6 border-r border-gray-500">
+                    <img src="../../../src/images/qr.png" alt="qr-user" class="w-24 h-16 object-contain">
+                </div>
+                <div class="w-full grow text-left overflow-hidden">
+                    <h5 class="text-lg capitalize">saldo</h5>
+                    <h1 class="font-medium font-quicksand text-2xl capitalize truncate">rp 1.250.000</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="mt-5 mb-10 p-5">
+        <div class="w-full h-auto my-10 grid grid-cols-1 gap-3">
+            <div class="w-full border p-3 px-5">
+                <a href="#" class="w-full flex items-center gap-3">
+                    <ion-icon name="settings-outline" class="text-2xl"></ion-icon>
+                    <span class="capitalize text-lg">profile</span>
+                </a>
+            </div>
+
+            <div class="w-full border p-3 px-5">
+                <a href="#" class="w-full flex items-center gap-3">
+                    <ion-icon name="ticket-outline" class="text-2xl"></ion-icon>
+                    <span class="capitalize text-lg">voucher</span>
+                </a>
+            </div>
+
+            <div class="w-full border p-3 px-5">
+                <a href="#" class="w-full flex items-center gap-3">
+                    <ion-icon name="headset-outline" class="text-2xl"></ion-icon>
+                    <span class="capitalize text-lg">customer service</span>
+                </a>
+            </div>
+
+            <div class="w-full border p-3 px-5">
+                <a href="#" class="w-full flex items-center gap-3">
+                    <ion-icon name="code-outline" class="text-2xl"></ion-icon>
+                    <span class="capitalize text-lg">versi 0.0.1</span>
+                </a>
+            </div>
+
+            <div class="w-full border p-3 px-5">
+                <a href="https://ariefiantorizky.github.io/portofolio/" class="w-full flex items-center gap-3">
+                    <ion-icon name="globe-outline" class="text-2xl"></ion-icon>
+                    <span class="capitalize text-lg">visit our website</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <mobile-detect></mobile-detect>
+
+    <footer-app></footer-app>
+</body>
+
+</html>

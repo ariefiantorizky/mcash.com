@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Quicksand&display=swap");
+
+/* 
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Quicksand', sans-serif;
+ */
+
+* {
+    font-family: "Fira Sans", sans-serif;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.qr {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mobile-detect{
+    display: none;
+}
+
+@media (min-width: 430px) {
+    header.uhelewihjnrjn93023nkdma,
+    main.fokuoidsjfnkjreo8ri0psdsdfj,
+    footer-app.qwueon048dnsdjf0wej {
+        display: none;
+    }
+
+    .mobile-detect {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @apply bg-sky-600;
+    }
+}
