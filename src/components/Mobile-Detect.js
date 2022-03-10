@@ -10,6 +10,7 @@ class MobileDetect extends HTMLElement {
 
     render() {
         this.shadow.innerHTML = `
+        <link rel="stylesheet" href="./src/tailwind/style.css" />
         <link rel="stylesheet" href="/src/tailwind/style.css" />
         
         <div class="mobile-detect">
