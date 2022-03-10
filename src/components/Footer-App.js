@@ -1,5 +1,3 @@
-// import style from "../tailwind/style.css";
-
 class FooterApp extends HTMLElement {
     constructor() {
         super();
@@ -28,8 +26,8 @@ class FooterApp extends HTMLElement {
                     </div>
                     <div class="text-center relative">
                         <div
-                            class="qr bg-sky-600 w-[70px] h-[70px] border-2 rounded-full flex items-center justify-center z-40">
-                            <a href="/public/views/scan-qr/">
+                            class="qr bg-sky-600 w-[70px] h-[70px] border-2 border-t-4 border-white rounded-full flex items-center justify-center z-40">
+                            <a href="/public/views/scan-qr/index.html">
                                 <ion-icon class="w-[28px] h-[28px] text-white animate-pulse" name="qr-code-outline"></ion-icon>
                             </a>
                         </div>
