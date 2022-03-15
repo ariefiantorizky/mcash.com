@@ -1,5 +1,4 @@
 import "./dist/feather.js";
-import "./src/components/Mobile-Detect.js";
 
 feather.replace();
 
